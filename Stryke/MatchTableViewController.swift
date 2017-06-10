@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  MatchTableViewController.swift
 //  Stryke
 //
 //  Created by Michael Andrew Auer on 6/9/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MatchTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
