@@ -33,6 +33,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Matches" image="first" id="vRZ-cc-GAj"/>
+                    <connections>
+                        <outlet property="matchTableView" destination="rg8-BJ-Kik" id="4T4-Xm-wko"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPQ-td-cqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
