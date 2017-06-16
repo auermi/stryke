@@ -15,38 +15,26 @@ class MatchTableViewController: UITableViewController {
     
     @IBOutlet var matchTableView: UITableView!
     
-    
-    var matches: [NSOBject] = [
-        {
-            id: 0,
-            teams: [
-                {
-                    id: 0,
-                    name: "G2 Esports"
-                },
-                {
-                    id: 1,
-                    name: "Team Liquid"
-                }
-            ]
-        }
-    ]
     let label = UILabel()
+    
+    var matches: [Match] = [
+        Match(_teams: ["EnvyUS", "Cloud9"]),
+        Match(_teams: ["Virtus Pro", "Team Liquid"])
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Create empty state message but dont add to view
-        
         label.frame = CGRect(x: 50, y: 50, width: 200, height: 30)
         label.textAlignment = NSTextAlignment.center
         label.center = self.view.center
-        label.text = "Add a new note!"
+        label.text = "There are no matches."
         
     }
     override func viewWillAppear(_ animated: Bool) {
         // If there are no notes, show empty state message
-        if (notes.count == 0) {
+        if (matches.count == 0) {
             self.view.addSubview(label)
         }
     }
@@ -56,15 +44,17 @@ class MatchTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
+        return matches.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get the cell object
-        let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Match Table View Cell", for: indexPath)
         // Set the cells text label equal to our note text
-        cell.textLabel?.text = notes[indexPath.row].noteTitle
-        cell.detailTextLabel?.text = DateTime().fmtDate(notes[indexPath.row].dateUpdated!)
+        let match = matches[indexPath.row]
+        cell.textLabel?.text = "\(match.teams[0]) vs. \(match.teams[1])"
+//        cell.detailTextLabel?.text = DateTime().fmtDate(notes[indexPath.row].dateUpdated!)
+        cell.detailTextLabel?.text = "TIME"
         return cell
     }
     
@@ -76,13 +66,14 @@ class MatchTableViewController: UITableViewController {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             
             // Remove deleted note
-            dataInterface.delete(notes[indexPath.row])
-            notes.remove(at: indexPath.row)
+//            dataInterface.delete(matches[indexPath.row])
+            matches.remove(at: indexPath.row)
+            
             // Remove from table
-            noteTable.deleteRows(at: [indexPath], with: .left)
+            matchTableView.deleteRows(at: [indexPath], with: .left)
             
             // If there are no notes, show empty state message
-            if (notes.count == 0) {
+            if (matches.count == 0) {
                 self.view.addSubview(label)
             }
         }
@@ -92,13 +83,13 @@ class MatchTableViewController: UITableViewController {
         // Leaving view so remove message if it exists
         label.removeFromSuperview()
         
-        // Pass the note object of the selected row to the edit view controller
-        if (segue.identifier == "edit") {
-            let destination = segue.destination as? EditViewController;
-            let cell = sender as! UITableViewCell
-            let selectedRow = tableView.indexPath(for: cell)!.row
-            destination!.selectedValue = notes[selectedRow]
-        }
+//        // Pass the note object of the selected row to the edit view controller
+//        if (segue.identifier == "edit") {
+//            let destination = segue.destination as? EditViewController;
+//            let cell = sender as! UITableViewCell
+//            let selectedRow = tableView.indexPath(for: cell)!.row
+//            destination!.selectedValue = notes[selectedRow]
+//        }
     }
 
 }

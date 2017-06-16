@@ -8,15 +8,13 @@
 
 import Foundation
 
-class Match {
+struct Match {
     var id: Int!
-    var name: String!
     var date: Date!
     var teams: [String]!
     
-    init(_name: String, _teams: [String]) {
+    init(_teams: [String]) {
         id = Int(arc4random_uniform(UInt32(4096)) + UInt32(0))
-        name = _name
         date = Date.init()
         teams = _teams
     }
