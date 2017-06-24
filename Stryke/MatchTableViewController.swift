@@ -33,7 +33,7 @@ class MatchTableViewController: UITableViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        // If there are no notes, show empty state message
+        // If there are no matches today, show empty state message
         if (matches.count == 0) {
             self.view.addSubview(label)
         }
@@ -50,11 +50,10 @@ class MatchTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Get the cell object
         let cell = tableView.dequeueReusableCell(withIdentifier: "Match Table View Cell", for: indexPath)
-        // Set the cells text label equal to our note text
+        // Set the cells text label equal to the match teams
         let match = matches[indexPath.row]
         cell.textLabel?.text = "\(match.teams[0]) vs. \(match.teams[1])"
-//        cell.detailTextLabel?.text = DateTime().fmtDate(notes[indexPath.row].dateUpdated!)
-        cell.detailTextLabel?.text = "TIME"
+        cell.detailTextLabel?.text = DateTime().dateToString(date: match.date)
         return cell
     }
     
@@ -62,33 +61,17 @@ class MatchTableViewController: UITableViewController {
         return true
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if (editingStyle == UITableViewCellEditingStyle.delete) {
-            
-            // Remove deleted note
-//            dataInterface.delete(matches[indexPath.row])
-            matches.remove(at: indexPath.row)
-            
-            // Remove from table
-            matchTableView.deleteRows(at: [indexPath], with: .left)
-            
-            // If there are no notes, show empty state message
-            if (matches.count == 0) {
-                self.view.addSubview(label)
-            }
-        }
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Leaving view so remove message if it exists
         label.removeFromSuperview()
         
 //        // Pass the note object of the selected row to the edit view controller
-//        if (segue.identifier == "edit") {
+//        if (segue.identifier == "match") {
 //            let destination = segue.destination as? EditViewController;
 //            let cell = sender as! UITableViewCell
 //            let selectedRow = tableView.indexPath(for: cell)!.row
-//            destination!.selectedValue = notes[selectedRow]
+//            destination!.selectedValue = matches[selectedRow]
 //        }
     }
 
