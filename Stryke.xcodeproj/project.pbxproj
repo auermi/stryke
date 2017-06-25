@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CA429C0C1EFEFA970051A29D /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA429C0B1EFEFA970051A29D /* DateTime.swift */; };
+		CA429C0E1EFFFEB90051A29D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA429C0D1EFFFEB90051A29D /* Team.swift */; };
 		CA7C85191EEBA58E0068A5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C85181EEBA58E0068A5FB /* AppDelegate.swift */; };
 		CA7C851B1EEBA58E0068A5FB /* MatchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C851A1EEBA58E0068A5FB /* MatchTableViewController.swift */; };
 		CA7C851D1EEBA58E0068A5FB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C851C1EEBA58E0068A5FB /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CA429C0B1EFEFA970051A29D /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		CA429C0D1EFFFEB90051A29D /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		CA7C85151EEBA58E0068A5FB /* Stryke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stryke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7C85181EEBA58E0068A5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7C851A1EEBA58E0068A5FB /* MatchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CA7C85231EEBA58E0068A5FB /* LaunchScreen.storyboard */,
 				CA7C85261EEBA58E0068A5FB /* Info.plist */,
 				CA961FEC1EEC632700C1C8C4 /* Match.swift */,
+				CA429C0D1EFFFEB90051A29D /* Team.swift */,
 			);
 			path = Stryke;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA429C0E1EFFFEB90051A29D /* Team.swift in Sources */,
 				CA7C851D1EEBA58E0068A5FB /* SecondViewController.swift in Sources */,
 				CA7C85191EEBA58E0068A5FB /* AppDelegate.swift in Sources */,
 				CA429C0C1EFEFA970051A29D /* DateTime.swift in Sources */,

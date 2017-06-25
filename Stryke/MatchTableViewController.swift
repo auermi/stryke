@@ -18,8 +18,34 @@ class MatchTableViewController: UITableViewController {
     let label = UILabel()
     
     var matches: [Match] = [
-        Match(_teams: ["EnvyUS", "Cloud9"]),
-        Match(_teams: ["Virtus Pro", "Team Liquid"])
+        Match(
+            _teams: [
+                Team(
+                    _name: "EnvyUs",
+                    _players: [
+                        "Happy",
+                        "RpK",
+                        "ScreaM",
+                        "sixeR",
+                        "xms"
+                    ],
+                    _location: "France",
+                    _rank: 12
+                ),
+                Team(
+                    _name: "Cloud9",
+                    _players: [
+                        "Skadoodle",
+                        "Stewie2k",
+                        "autimatic",
+                        "n0thing",
+                        "shroud"
+                    ],
+                    _location: "United States",
+                    _rank: 8
+                )
+            ]
+        )
     ]
     
     override func viewDidLoad() {
@@ -52,7 +78,7 @@ class MatchTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Match Table View Cell", for: indexPath)
         // Set the cells text label equal to the match teams
         let match = matches[indexPath.row]
-        cell.textLabel?.text = "\(match.teams[0]) vs. \(match.teams[1])"
+        cell.textLabel?.text = "\(match.teams[0].name!) vs. \(match.teams[1].name!)"
         cell.detailTextLabel?.text = DateTime().dateToString(date: match.date)
         return cell
     }
