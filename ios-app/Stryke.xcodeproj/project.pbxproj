@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA33D91E1F2BBF6B00D7DD82 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = CA33D91D1F2BBF6B00D7DD82 /* sample.json */; };
 		CA429C0C1EFEFA970051A29D /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA429C0B1EFEFA970051A29D /* DateTime.swift */; };
 		CA429C0E1EFFFEB90051A29D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA429C0D1EFFFEB90051A29D /* Team.swift */; };
 		CA7C85191EEBA58E0068A5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C85181EEBA58E0068A5FB /* AppDelegate.swift */; };
 		CA7C851B1EEBA58E0068A5FB /* MatchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C851A1EEBA58E0068A5FB /* MatchTableViewController.swift */; };
-		CA7C851D1EEBA58E0068A5FB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C851C1EEBA58E0068A5FB /* NewsViewController.swift */; };
+		CA7C851D1EEBA58E0068A5FB /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7C851C1EEBA58E0068A5FB /* NewsTableViewController.swift */; };
 		CA7C85201EEBA58E0068A5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7C851E1EEBA58E0068A5FB /* Main.storyboard */; };
 		CA7C85221EEBA58E0068A5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA7C85211EEBA58E0068A5FB /* Assets.xcassets */; };
 		CA7C85251EEBA58E0068A5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA7C85231EEBA58E0068A5FB /* LaunchScreen.storyboard */; };
@@ -20,12 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA33D91D1F2BBF6B00D7DD82 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 		CA429C0B1EFEFA970051A29D /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		CA429C0D1EFFFEB90051A29D /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		CA7C85151EEBA58E0068A5FB /* Stryke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stryke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7C85181EEBA58E0068A5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA7C851A1EEBA58E0068A5FB /* MatchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewController.swift; sourceTree = "<group>"; };
-		CA7C851C1EEBA58E0068A5FB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		CA7C851C1EEBA58E0068A5FB /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		CA7C851F1EEBA58E0068A5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA7C85211EEBA58E0068A5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA7C85241EEBA58E0068A5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 				CA7C85181EEBA58E0068A5FB /* AppDelegate.swift */,
 				CA7C851A1EEBA58E0068A5FB /* MatchTableViewController.swift */,
 				CA429C0B1EFEFA970051A29D /* DateTime.swift */,
-				CA7C851C1EEBA58E0068A5FB /* NewsViewController.swift */,
+				CA7C851C1EEBA58E0068A5FB /* NewsTableViewController.swift */,
 				CA7C851E1EEBA58E0068A5FB /* Main.storyboard */,
 				CA7C85211EEBA58E0068A5FB /* Assets.xcassets */,
 				CA7C85231EEBA58E0068A5FB /* LaunchScreen.storyboard */,
@@ -75,6 +77,7 @@
 				CA961FEC1EEC632700C1C8C4 /* Match.swift */,
 				CA429C0D1EFFFEB90051A29D /* Team.swift */,
 				CAD112031F242AB10064AF46 /* Article.swift */,
+				CA33D91D1F2BBF6B00D7DD82 /* sample.json */,
 			);
 			path = Stryke;
 			sourceTree = "<group>";
@@ -106,11 +109,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Pear Bus";
 				TargetAttributes = {
 					CA7C85141EEBA58E0068A5FB = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7C85251EEBA58E0068A5FB /* LaunchScreen.storyboard in Resources */,
+				CA33D91E1F2BBF6B00D7DD82 /* sample.json in Resources */,
 				CA7C85221EEBA58E0068A5FB /* Assets.xcassets in Resources */,
 				CA7C85201EEBA58E0068A5FB /* Main.storyboard in Resources */,
 			);
@@ -153,7 +158,7 @@
 			files = (
 				CAD112041F242AB10064AF46 /* Article.swift in Sources */,
 				CA429C0E1EFFFEB90051A29D /* Team.swift in Sources */,
-				CA7C851D1EEBA58E0068A5FB /* NewsViewController.swift in Sources */,
+				CA7C851D1EEBA58E0068A5FB /* NewsTableViewController.swift in Sources */,
 				CA7C85191EEBA58E0068A5FB /* AppDelegate.swift in Sources */,
 				CA429C0C1EFEFA970051A29D /* DateTime.swift in Sources */,
 				CA7C851B1EEBA58E0068A5FB /* MatchTableViewController.swift in Sources */,
@@ -193,7 +198,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -201,7 +208,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -243,7 +254,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -251,7 +264,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -287,7 +304,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.pearbus.Stryke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -302,7 +320,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.pearbus.Stryke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class MatchTableViewController: UITableViewController {
 
@@ -56,6 +57,38 @@ class MatchTableViewController: UITableViewController {
         label.textAlignment = NSTextAlignment.center
         label.center = self.view.center
         label.text = "There are no matches."
+        
+        
+        // Get Sample Data
+//        let fm = FileManager()
+//        
+//        let path: String! = "/Users/auermi/Dropbox (Personal)/Projects/Stryke/Stryke/sample.json"
+//        
+//        let sample_data = fm.contents(atPath: path)!
+//        
+//        
+//        func convertToDictionary(text: String) -> [String: Any]? {
+//            if let data = text.data(using: .utf8) {
+//                do {
+//                    return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+//                } catch {
+//                    print(error.localizedDescription)
+//                }
+//            }
+//            return nil
+//        }
+//        
+//        
+//    
+//        if let sample_string = String(data: sample_data, encoding: .utf8) {
+//            print(sample_string)
+//            
+//        let dict = convertToDictionary(text: sample_string)
+//            print(dict?.count)
+//        } else {
+//            print("not a valid UTF-8 sequence")
+//        }
+        
         
     }
     override func viewWillAppear(_ animated: Bool) {

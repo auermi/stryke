@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>HLTV.org - The home of competitive Counter-Strike</title>
+    <description>HLTV.org is the leading csgo site in the world, featuring news, demos, pictures, statistics, on-site coverage and much much more!</description>
+    <link>https://www.hltv.org/</link>
+    <language>en</language>
+    <ttl>60</ttl>
+    <image>
+      <url>https://www.hltv.org/img/static/openGraphHltvLogo.png</url>
+      <title>HLTV.org - The home of competitive Counter-Strike</title>
+      <link>https://www.hltv.org/</link>
+    </image>
+    <link xmlns="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://www.hltv.org/rss/news"></link>
+    <item>
+      <title>Virtue unveil quartet to finalise roster</title>
+      <description>Virtue Gaming have formally completed their new CS:GO squad with the addition of four players.</description>
+      <link>https://www.hltv.org/news/22850/virtue-unveil-quartet-to-finalise-roster</link>
+      <guid isPermaLink="false">hltvnews22850</guid>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Video: NiKo vs. Natus Vincere</title>
+      <description></description>
+      <link>https://www.hltv.org/news/22853/video-niko-vs-natus-vincere</link>
+      <guid isPermaLink="false">hltvnews22853</guid>
+      <pubDate>Tue, 20 Feb 2018 22:33:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>TACO: &quot;[After the Major] we were rebuilding the team&quot;</title>
+      <description>SK&apos;s Epitacio &quot;TACO&quot; de Melo shared details on the team&apos;s status, their Inferno and the loss to mousesports.</description>
+      <link>https://www.hltv.org/news/22852/taco-after-the-major-we-were-rebuilding-the-team</link>
+      <guid isPermaLink="false">hltvnews22852</guid>
+      <pubDate>Tue, 20 Feb 2018 21:26:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>StarSeries round five matchups drawn</title>
+      <description>The matchups of the Swiss stage&apos;s last round, which will determine the last three teams in the playoffs, have been drawn live on stream at the end of day four in Kiev.</description>
+      <link>https://www.hltv.org/news/22851/starseries-round-five-matchups-drawn</link>
+      <guid isPermaLink="false">hltvnews22851</guid>
+      <pubDate>Tue, 20 Feb 2018 20:18:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>SK and Astralis through to quarter-finals</title>
+      <description>In the last set of matches of round four, Astralis eased past Heroic 2-0 (Overpass 16-11, Nuke 16-4) and SK beat Natus Vincere 2-0 (Cobblestone 16-12, Inferno 16-7) to earn their spots in the playoffs.</description>
+      <link>https://www.hltv.org/news/22847/sk-and-astralis-through-to-quarter-finals</link>
+      <guid isPermaLink="false">hltvnews22847</guid>
+      <pubDate>Tue, 20 Feb 2018 19:54:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ISSAA: &quot;I had challenges in front of me and I faced every one of them&quot;</title>
+      <description>We managed to grab a hold of Issa &quot;ISSAA&quot; Murad after HellRaisers eliminated Gambit from StarSeries i-League Season 4, securing a 2-1 victory.</description>
+      <link>https://www.hltv.org/news/22849/issaa-i-had-challenges-in-front-of-me-and-i-faced-every-one-of-them</link>
+      <guid isPermaLink="false">hltvnews22849</guid>
+      <pubDate>Tue, 20 Feb 2018 19:06:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Intel Challenge Katowice 2018: Everything you need to know</title>
+      <description>Eight of the world&apos;s best female CS:GO teams will be playing in Katowice for a $50,000 prize pool.</description>
+      <link>https://www.hltv.org/news/22848/intel-challenge-katowice-2018-everything-you-need-to-know</link>
+      <guid isPermaLink="false">hltvnews22848</guid>
+      <pubDate>Tue, 20 Feb 2018 17:49:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>ESL Pro League Season 7 Finals expanded to 16 teams</title>
+      <description>ESL has announced that the seventh edition of the Pro League will culminate with a 16-team offline event.</description>
+      <link>https://www.hltv.org/news/22846/esl-pro-league-season-7-finals-expanded-to-16-teams</link>
+      <guid isPermaLink="false">hltvnews22846</guid>
+      <pubDate>Tue, 20 Feb 2018 17:08:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Liquid to playoffs over mousesports; HellRaisers eliminate Gambit</title>
+      <description>Liquid have booked their spot in the StarSeries i-League Season 4 playoffs after beating mousesports 2-1, while HellRaisers have eliminated Gambit from the event, also on three maps.</description>
+      <link>https://www.hltv.org/news/22845/liquid-to-playoffs-over-mousesports-hellraisers-eliminate-gambit</link>
+      <guid isPermaLink="false">hltvnews22845</guid>
+      <pubDate>Tue, 20 Feb 2018 16:45:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Wind and Rain sign Stifmeister</title>
+      <description>Wind and Rain have announced that they have acquired the services of the team known as Stifmeister.</description>
+      <link>https://www.hltv.org/news/22843/wind-and-rain-sign-stifmeister</link>
+      <guid isPermaLink="false">hltvnews22843</guid>
+      <pubDate>Tue, 20 Feb 2018 14:25:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
