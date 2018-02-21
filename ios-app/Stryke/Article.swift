@@ -12,19 +12,17 @@ struct Article {
     var id: Int!
     var title: String!
     var url: String!
-//    var content: [NSObject]!
-    var content: String!
+    var description: String!
+    var guid: String!
+    var pubDate: String!
     
     
-    
-    // let json = try? JSONSerialization.jsonObject(with: hltv, options: [])
-    
-    
-    init(_title: String!, _url: String!) {
+    init(title: String!, url: String!, description: String!, guid: String!, pubDate: String!) {
         self.id = Int(arc4random_uniform(UInt32(4096)) + UInt32(0))
-        self.title = _title
-        self.url = _url
-//        self.content = _content
-//        self.content = sample
+        self.title = title
+        self.url = url
+        self.description = description
+        self.guid = guid
+        self.pubDate = pubDate
     }
 }

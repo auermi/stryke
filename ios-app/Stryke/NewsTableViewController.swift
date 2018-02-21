@@ -13,8 +13,11 @@ class NewsTableViewController: UITableViewController {
     
     var news: [Article] = [
         Article(
-            _title: "StarSeries round five matchups drawn",
-            _url: "https://www.hltv.org/news/22851/starseries-round-five-matchups-drawn"
+            title: "StarSeries round five matchups drawn",
+            url: "https://www.hltv.org/news/22851/starseries-round-five-matchups-drawn",
+            description: "The matchups of the Swiss stage&apos;s last round, which will determine the last three teams in the playoffs, have been drawn live on stream at the end of day four in Kiev.",
+            guid: "hltvnews22851",
+            pubDate: "Tue, 20 Feb 2018 20:18:00 GMT"
         )
     ]
     
@@ -30,7 +33,7 @@ class NewsTableViewController: UITableViewController {
         // If there are no matches today, show empty state message
         
         if (news.count == 0) {
-            print("hey theres no news")
+            // No news is good news
         }
     }
     
@@ -43,12 +46,14 @@ class NewsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         // Get the cell object
         let cell = tableView.dequeueReusableCell(withIdentifier: "News Table View Cell", for: indexPath)
-        // Set the cells text label equal to the match teams
+        
+        // Set the cells text label equal to the article title
         let article = news[indexPath.row]
         cell.textLabel?.text = article.title!
-        cell.detailTextLabel?.text = article.url!
+        cell.detailTextLabel?.text = article.pubDate!
         return cell
     }
     
