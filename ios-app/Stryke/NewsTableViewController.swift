@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 
+
 class NewsTableViewController: UITableViewController {
     
     var news: [Article] = [
@@ -23,14 +24,12 @@ class NewsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("whats up my playas")
+       
         
         
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        // If there are no matches today, show empty state message
         
         if (news.count == 0) {
             // No news is good news
@@ -53,7 +52,7 @@ class NewsTableViewController: UITableViewController {
         // Set the cells text label equal to the article title
         let article = news[indexPath.row]
         cell.textLabel?.text = article.title!
-        cell.detailTextLabel?.text = article.pubDate!
+        cell.detailTextLabel?.text = article.description!
         return cell
     }
     
